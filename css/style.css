@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.container{
+    font-family: Consolas, monaco, monospace;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px lightgray;
+    overflow: scroll;
+}
+hr{
+    margin: 0 1.2em;
+    box-shadow: 0 0 3px gray;
+}
+
+/* --------------  */
+/* header principal */
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-idiomas hr{
+    margin-left: 2em;
+}
+.idiomas>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+.idiomas>ul>li{
+    padding: 0.5em;
+    margin: 0 0.3em;
+} 
+.menu>ul>li{
+    padding: 0.5em;
+    margin: 0.3em 0;
+}
+.idiomas>ul>li>a, .menu>ul>li>a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.idiomas>ul>li:hover, .menu>ul>li:hover{
+    background-color: lightgray;
+    border-radius: 3px;
+    box-shadow: 0 0 3px black;
+   
+}
+.icono{
+    width: 5em;
+    margin: 1em;
+}
+.titulo{
+    font-size: 3em;
+    margin: 0;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 0.5em;
+}
+.titulos{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    margin: 2em 0;
+}
+.menu>ul{
+    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding-inline-start: 0;
+}
+/* imagen de la cabecera */
+
+.encabezado{     
+    width: 100%;
+}
+header img{
+    margin-top: 1em;
+}
+
+/* ---------- Cuerpo -------------- */
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+section{
+    margin: 0 1.2em;
+}
+.cabecero h2{
+    text-align: center;
+}
+
+article{
+    margin: 10px;
+    width: 75%;
+    margin: 10px auto;
+    background-color: #fAfAfA;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+article h3{
+    text-align: center;
+}
+article p{
+    margin: 10px;
+}
+
+/*--------- Footer --------*/
+footer{
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    padding: 1.2em;
+    font-weight: bold;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.W3C_validator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 0.8em;
+}
+
+/* Dispositivos especialmente pequeños (phones, menores que 768px) */
+/* Estilos principales, ya que es el contexto por defecto en Bootstrap */
+@media (min-width: 320px) {
+/* Dispositivos pequeños (tablets, 768px y superiores) */
+
+}
+@media (min-width: 992px) {
+/* Dispositivos medios (escritorio, 992px y superiores) */
+.top{
+    
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.idiomas>ul{
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 1.2em;
+}
+
+.menu>ul{
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+}
+.menu>ul>li{
+    padding: 0.5em;
+    margin: 0 0.3em;
+}
+
+.titulos{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+aside article {
+    margin: 10px;
+    float: left;
+    width: 47%;
+    }
+}
+
+@media (min-width: 1200px) {
+/* Dispositivos grandes (escritorios grandes, 1200px y superiores) */
+aside article {
+    width: 31%;
+    }
+}
